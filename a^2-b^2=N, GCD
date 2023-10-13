@@ -1,0 +1,33 @@
+#Practical-6
+#6.A
+N = 36
+a = 6
+b = 6
+print("The Value of Positive Number N is:", N)
+print("Factors of N are:", a, "&", b)
+x = (a + b) / 2
+y = (a - b) / 2
+print(x)
+print(y)
+asqr = x * x
+bsqr = y * y
+print("The Value of Square of as and bs: ", asqr, "&", bsqr)
+N = asqr - bsqr
+print(N)
+
+#6.B
+a = 6
+b = 6
+def gcd(a, b):
+    if b > a:
+        if b % a == 0:
+            return a
+        else:
+            return gcd(b % a, a)
+    else:
+        if a % b == 0:
+            return b
+        else:
+            return gcd(b, a % b)
+result = gcd(a, b)
+print("The GCD of", a, "and", b, "is:", result)
