@@ -1,0 +1,10 @@
+#Practical -2
+import numpy as np
+u = np.array((3, 6, 9))
+v = np.array((19, 22, 47))
+print("Vector u =", u)
+print("Vector v =", v)
+print("Addition of Vector u & v is", u + v)
+print("Subtraction of Vector u & v is", u - v)
+p = np.dot(u, v)
+print("Dot Product of u & v is", p)
