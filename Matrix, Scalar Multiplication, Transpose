@@ -1,0 +1,36 @@
+#Practical-3
+#3.A
+import numpy as np
+M = np.array([[1, 2, 3],[2, 5, 3],[2, 3, 5],])
+print("\nThe matrix is :\n", M)
+
+#3.B
+y = M[0:1]
+print(" first row :\n", y)
+x = M[0:2]
+print("\n two rows :\n", x)
+z = M[0:3]
+print("\n three rows :\n", z)
+
+print("\n The columms are :")
+x = M[:, 0:1]
+print(" one column :\n", x)
+x = M[:, 0:2]
+print("\n two coloums :\n", x)
+x = M[:, 0:3]
+print("\n three columns :\n", x)
+
+# 3.C
+a = 5
+print("\n The scalar multiplication is:\n", a * M)
+
+
+# 3.D
+print("\n Transpose of matrix M :")
+print(" Matrix M : \n", M)
+T = np.array([[0, 0, 0], [0, 0, 0], [0, 0, 0]])
+print("\n Matrix T :\n", T)
+for i in range(len(M)):
+    for j in range(len(M[0])):
+            T[j][i] = M[i][j]
+print("\n Tranpose of M :\n", T)
