@@ -1,0 +1,67 @@
+#Practical - 1
+#1.A
+a=4+3j
+b=6-2j
+print("Addition :", a+b)
+print("Subtraction :", a-b)
+print("Multiplication :", a*b)
+print("Division :", a/b)
+print("\n")
+
+#1.B
+print(a.conjugate())
+print(a.conjugate())
+print("\n")
+
+#1.C
+import matplotlib.pyplot as plt
+x=2+2j
+m=[-5+1j,2+3j,-1-2j,2+2j]
+X=[x.real for x in m]
+Y=[x.imag for x in m]
+plt.scatter(X,Y,color='orange')
+plt.show()
+#1.D(1)
+#BY 90 DEGREES
+import matplotlib.pyplot as plt
+x=2+4j
+y=1j
+plt.scatter(x.real,x.imag,color='red')
+c=x*y
+plt.scatter(c.real,c.imag)
+plt.show ()
+
+#1.D(2)
+#BY 180 DEGREES 
+import matplotlib.pyplot as plt
+x=2+4j
+plt.scatter(x.real,x.imag,color='red')
+plt.scatter(-1*x.real,-1*x.imag,color='blue')
+plt.show() 
+
+#1.D(3)
+#BY 270 DEGREES
+import matplotlib.pyplot as plt
+x=2+4j
+y=-1j
+plt.scatter(x.real,x.imag,color='red')
+c=x*y
+plt.scatter(c.real,c.imag)
+plt.show() 
+print("\n")
+
+#1.D(4)
+#Scailling
+import matplotlib.pyplot as plt
+x=2+4j
+scale=0.5
+scale1=0.33
+scale2=2
+plt.scatter(x.real,x.imag,color='yellow')
+c=scale*x
+d=scale*x
+e=scale*x
+plt.scatter(c.real,c.imag,color='green')
+plt.scatter(d.real,d.imag,color='red')
+plt.scatter(e.real,e.imag,color='blue')
+plt.show()
