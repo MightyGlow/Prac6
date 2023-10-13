@@ -1,0 +1,12 @@
+#Practical - 8
+import numpy as np
+A=np.mat("3 -2 2 ; 1 0 5 ; 2 6 8")
+print('A\n',A)
+print("Eigenvalues ",np.linalg.eigvals(A))
+print("\n")
+eigenvalues,eigenvectors=np.linalg.eig(A)
+print("\n")
+print("First Tuple of eig\n",eigenvalues)
+print("\n")
+print("Second Tuple of eig\n",eigenvectors)
+
